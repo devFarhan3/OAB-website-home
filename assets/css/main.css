@@ -12,7 +12,9 @@
   --nav-hover-color: #FFFFFF;
   --heading-color: #000C24;
   --navy-color: #000C24;
+  --pale-blue: #EAF5FB;
   --gradient-btn: linear-gradient(270deg, #26A9E2 0%, #005EAC 100%);
+  --coprate-btn: linear-gradient(180deg, #005EAC 0%, #1C2B43 100%);
 
 }
 
@@ -1071,7 +1073,7 @@ label.micon {
   height: 4px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #EAF5FB;
+  background-color: var(--pale-blue);
   background-image: linear-gradient(to right, #26AAE1, #26AAE1);
   background-repeat: no-repeat;
   background-size: 0 100%;
@@ -1380,6 +1382,222 @@ button.slick-next.slick-arrow {
 .saving_plans .lower_text_light {
   color: var(--white-color);
 }
+
+
+/* product and service sec */
+.view_all_btn {
+  background: var(--white-color);
+  border-radius: 50px;
+  padding: 16px 49px;
+  font-family: var(--nav-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--navy-color);
+  border: 1px solid var(--navy-color);
+
+  &:hover {
+    background: var(--navy-color);
+    color: var(--white-color);
+  }
+}
+
+/* hover cards producsrs sec */
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+}
+
+.card-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/gs1.webp');
+  /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+}
+
+/* Default: Semi-transparent dark overlay */
+.card-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+}
+
+/* Hover: Semi-transparent blue overlay */
+.card:hover .card-bg::before {
+  background: rgba(38, 169, 225, 0.4);
+  background: linear-gradient(180deg, rgba(38, 169, 225, 0.8), rgba(38, 169, 225, 0.8));
+}
+
+.top-text,
+.bottom-text {
+  opacity: 1;
+}
+
+
+
+/* Hidden text & button (default) */
+.button-container {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.top-text {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  text-align: start;
+  transform: translateY(-20px);
+  padding: 24px;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: start;
+
+  transform: translateY(20px);
+  padding: 24px;
+}
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.card-button {
+  background: var(--white-color);
+  border-radius: 50px;
+  padding: 14px 24px;
+  font-family: var(--nav-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--navy-color);
+  border: 1px solid var(--white-color);
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+
+.card:hover .button-container {
+  opacity: 1;
+  /* transform: translateY(0) scale(1); */
+}
+
+.card:hover .top-text,
+.card:hover .bottom-text {
+  opacity: 0;
+}
+
+.card-button:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
+
+
+
+.top-text h2 {
+  font-family: var(--nav-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--white-color);
+}
+
+
+#middle_child .card {
+  height: 515px;
+}
+
+.proucts_services_sec {
+  background-color: var(--pale-blue);
+}
+
+
+.round-cirlce {
+  position: absolute;
+  top: -21px;
+  z-index: -1;
+  transform: translate(8%, -2%);
+  overflow: hidden;
+}
+
+
+#announcements_sec .view_all_btn {
+  background-color: var(--white-color) !important;
+  border: 1px solid var(--navy-color) !important;
+}
+
+.announcements_sec {
+  overflow: hidden;
+  margin-bottom: 15rem;
+}
+
+.Products_Services {
+  max-width: 490px;
+
+}
+
+.mob_img {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-55px, 10px) !important;
+}
+
+
+
+/* mobile app sec */
+
+.mobile_app_sec {
+  padding: 100px 96px;
+  background: linear-gradient(180deg, #005EAC 0%, #1C2B43 100%);
+}
+
+.svg-icon-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0px;
+}
+
+.svg-icon-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.list-icon {
+  margin-right: 10px;
+}
+
+.mobile_app_sec .upper_txt__light , .mobile_app_sec .heading_four , .mobile_app_sec .lower_text_light  {
+  color: var(--white-color);
+}
+
+/* ends */
 
 
 /* Media query for mobile devices (adjust the breakpoint as needed) */

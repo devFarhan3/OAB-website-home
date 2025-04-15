@@ -7,6 +7,7 @@
     --para-color: #FFFFFF;
     --nav-color: #FFFFFF;
     --gradient-btn: linear-gradient(270deg, #26A9E2 0%, #005EAC 100%);
+    --pale-blue: #000C24;
 
 
 }
@@ -84,7 +85,7 @@
 }
 
 /* explore more btn */
-[data-bs-theme="dark"] .explore-more-btn{
+[data-bs-theme="dark"] .explore-more-btn , #announcements_sec .view_all_btn{
     background: var(--white-color);
     border-radius: 50px;
     padding: 16px 49px;
@@ -100,7 +101,29 @@
       background: transparent;
       color: var(--white-color);
     }
+   
   }
+  
+
+
+   /* view all btn cs */
+
+   [data-bs-theme="dark"] .view_all_btn {
+    background: transparent;
+    border-radius: 50px;
+    padding: 16px 49px;
+    font-family: var(--nav-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+
+
+  
 
 
 
