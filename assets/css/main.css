@@ -1883,14 +1883,35 @@ button.slick-next.slick-arrow {
 
 }
 
+.login_btn {
+  background-color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 14px 24px;
+  line-height: 17px;
+  color: var(--navy-color);
+  border-radius: 43px;
+}
+
+.register_btn {
+  background-color: var(--navy-color);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 14px 24px;
+  line-height: 17px;
+  color: var(--white-color);
+  border-radius: 43px;
+}
+
 
 .find_out_more_btn a {
   font-family: var(--nav-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  padding: 14px 36px;
+  padding: 14px 24px;
   line-height: 17px;
+  border-radius: 43px;
   color: var(--navy-color);
 
   &:hover {

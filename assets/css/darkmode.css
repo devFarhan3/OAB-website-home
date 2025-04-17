@@ -141,7 +141,11 @@
   
   [data-bs-theme="dark"] .find_out_more_btn a {
     
-    color: var(--white-color);
+    color: var(--navy-color);
+    font-family: var(--nav-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
 }
   
  
