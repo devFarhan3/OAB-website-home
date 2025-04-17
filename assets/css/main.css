@@ -1,5 +1,9 @@
 /* farhan css for OAB website  */
 
+/* helvetica-neue  */
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+
 
 :root {
   --custom-bg: #FFFFFF;
@@ -7,7 +11,7 @@
   --light-blue: #26AAE1;
   --white-color: #FFFFFF;
   --nav-color: #FFFFFF;
-  --nav-font: "RM Neue", "Roboto", sans-serif;
+  --nav-font: 'Helvetica Neue', sans-serif;
   --accent-color: #26AAE1;
   --nav-hover-color: #FFFFFF;
   --heading-color: #000C24;
@@ -587,6 +591,15 @@ h6 {
 /*--------------------------------------------------------------
 # site padding & Margins
 --------------------------------------------------------------*/
+
+
+.pt_96 {
+  padding-top: 96px;
+}
+
+.pt_96 {
+  padding-bottom: 96px;
+}
 
 .pt_80 {
   padding-top: 80px;
@@ -1593,11 +1606,318 @@ button.slick-next.slick-arrow {
   margin-right: 10px;
 }
 
-.mobile_app_sec .upper_txt__light , .mobile_app_sec .heading_four , .mobile_app_sec .lower_text_light  {
+.mobile_app_sec .upper_txt__light,
+.mobile_app_sec .heading_four,
+.mobile_app_sec .lower_text_light {
   color: var(--white-color);
 }
 
+
+.invst_bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/ir-img.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.invst_bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+
+.invst_bg {
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  height: 500px;
+}
+
+.invst_icon {
+  margin-bottom: 24px;
+}
+
+.icons_text {
+  transform: translateY(10%);
+}
+
+.icons_text:hover {
+  transform: translateY(0%);
+  transition: all 0.4s ease;
+}
+
+
+
+.invest_para {
+  opacity: 0;
+  transition: all 0.3s ease;
+  max-width: 600px;
+}
+
+.invst_bg:hover .button-container,
+.invst_bg:hover .invest_para {
+  opacity: 1;
+
+}
+
+
+.invst_bg:hover::before {
+  background: rgba(38, 169, 225, 0.4);
+  background: linear-gradient(180deg, rgba(38, 169, 225, 0.8), rgba(38, 169, 225, 0.8));
+}
+
+
+.invst_bg .button-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 35%) scale(0.8);
+}
+
+.invst_text h4 {
+  font-family: var(--nav-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: var(--white-color);
+
+}
+
+.invst_text p {
+  font-family: var(--nav-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--white-color);
+
+}
+
+
+
+/* what we offer sec */
+
+.we_offer .offer_cards {
+  position: relative;
+  width: 100%;
+  max-height: 315px;
+  background: url(../img/dm1.webp) center / cover no-repeat;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+.we_offer .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s ease;
+  z-index: 1;
+}
+
+.we_offer .content {
+  position: relative;
+  z-index: 2;
+  color: var(--white-color);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.we_offer .content h2 {
+  font-family: var(--nav-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--white-color);
+  transform: translateY(120px);
+  margin-bottom: 0;
+  text-align: start;
+
+
+}
+
+.we_offer .content p,
+.we_offer .content button {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  display: flex;
+}
+
+
+
+.we_offer .offer_cards:hover .overlay {
+  background: linear-gradient(180deg, rgba(38, 169, 225, 0.8), rgba(38, 169, 225, 0.8));
+}
+
+.we_offer .offer_cards:hover .content p,
+.we_offer .offer_cards:hover .content button {
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+
+}
+
+
+.offer_cards:hover .content h2 {
+  transform: translateY(-10px);
+  text-align: start;
+}
+
+.offer_cards:hover .content p,
+.offer_cards:hover .content button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.profile-box {
+  background-color: var(--white-color);
+  backdrop-filter: blur(25px);
+  padding: 50px 24px;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: start;
+  min-height: 395px;
+}
+
+
+
+
+/* Radial border effect using pseudo-element */
+.profile-box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 16px;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #015EAB 0%, #26AAE1 100%);
+  z-index: -1;
+
+}
+
+.profile-box .user-icon {
+
+  margin-bottom: 15px;
+}
+
+.profile-box h2 {
+  font-family: var(--nav-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: var(--navy-color);
+
+}
+
+.profile-box p {
+
+  margin-bottom: 24px;
+}
+
+.profile-box .btn-group {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.profile-box button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-box button:hover {
+  background-color: #0056b3;
+}
+
+.profile-box button.secondary {
+  background-color: #6c757d;
+}
+
+.profile-box button.secondary:hover {
+  background-color: #5a6268;
+}
+
+
+.light_card_text {
+  font-family: var(--nav-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: var(--navy-color);
+  margin-bottom: 24px;
+
+}
+
+
+.find_out_more_btn a {
+  font-family: var(--nav-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 14px 36px;
+  line-height: 17px;
+  color: var(--navy-color);
+
+  &:hover {
+
+    color: var(--dark-blue);
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    text-align: center;
+
+  }
+
+}
+
+.blue_color {
+  color: var(--dark-blue);
+}
+
+
+.last_card .profile-box {
+  padding: 24px !important;
+  background-color: var(--pale-blue) !important;
+}
+
+
 /* ends */
+
+/* farhan css ends */
 
 
 /* Media query for mobile devices (adjust the breakpoint as needed) */
