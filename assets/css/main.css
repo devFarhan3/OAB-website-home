@@ -1915,6 +1915,22 @@ button.slick-next.slick-arrow {
 }
 
 
+/* why choose oab sec css */
+
+.why_choose_oab {
+
+  background: url(../img/why-choose-bg.webp), #000C24;
+  background-size: cover;
+  background-position: center;
+  max-height: 400px;
+}
+
+.wc_text {
+  max-width: 480px;
+}
+
+/* edns oab */
+
 /* ends */
 
 /* farhan css ends */
