@@ -1847,11 +1847,12 @@ button.slick-next.slick-arrow {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 1px; /* This controls border thickness */
+  padding: 1px;
+  /* This controls border thickness */
   border-radius: 16px;
   background: linear-gradient(180deg, #015EAB 0%, #26AAE1 100%);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
@@ -2621,12 +2622,15 @@ button.slick-next.slick-arrow {
 /* endds */
 
 /* 1. Prevent horizontal overflow on the whole page */
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
 /* 2. Optional: box-sizing reset to keep sizing consistent */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -2652,13 +2656,15 @@ html, body {
 /* farhan media query css  */
 
 @media (min-width: 1024px) and (max-width: 1366px) {
-  .navmenu a, .navmenu a:focus {
-   
+
+  .navmenu a,
+  .navmenu a:focus {
+
     font-size: 13px;
     padding: 6px;
     line-height: 19px;
     transition: 0.3s;
-}
+  }
 }
 
 
@@ -2796,11 +2802,51 @@ html, body {
 
   }
 
-  body {
-    overflow-x: hidden !important;
+
+  .input-wrapper input {
+
+    width: 100%;
+
   }
 
 
 
+
+
+}
+
+
+@media (max-width: 375px) {
+  .gradient_btn {
+   
+    padding: 12px 25px !important;
+  
+    font-size: 13px !important;
+    line-height: 19px !important;
+   
+}
+
+
+.footr_btm {
+  display: block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+
+.card_heading p {
+  
+  max-width: 300px !important;
+}
+
+.mob_img {
+ 
+  transform: translate(0%, -81%) !important;
+}
+
+.announcements_sec {
+  overflow: hidden;
+  margin-bottom: 15rem !important;
+}
 
 }
