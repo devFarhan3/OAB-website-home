@@ -141,17 +141,17 @@ html[dir="rtl"] .me-2 {
     margin-left: .5rem !important;
 }
 
-html[dir="rtl"] .mob_img {
+/* html[dir="rtl"] .mob_img {
     position: absolute;
     bottom: 0;
     transform: translate(90px, 10px) !important;
-}
+} */
 
-html[dir="rtl"]  .ps-lg-5 {
+html[dir="rtl"] .ps-lg-5 {
     padding-left: 1rem !important;
 }
 
-html[dir="rtl"]  .me-3 {
+html[dir="rtl"] .me-3 {
     margin-left: 1rem !important;
 }
 
@@ -165,7 +165,28 @@ html[dir="rtl"] .swiper-button-prev:after {
     transform: rotate(0deg);
 }
 
-html[dir="rtl"] .footer_sec  .list-unstyled {
-   
+html[dir="rtl"] .footer_sec .list-unstyled {
+
     padding-right: 0;
+}
+
+html[dir="rtl"] .input-wrapper input {
+    
+    margin-left: 8px;
+   margin-right: auto;
+}
+
+html[dir="rtl"] .toggle_btn {
+    position: absolute;
+    left: 100px;
+    right: auto;
+}
+
+
+@media (max-width: 640px) {
+    html[dir="rtl"] .search_icon {
+        
+        left: 85px;
+        right: auto;
+    }
 }
