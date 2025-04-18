@@ -117,13 +117,55 @@ html[dir="rtl"] .submenu {
 }
 
 
-html[dir="rtl"] {  #saving_plans .explore-more-btn .me-2 , .visa_content .explore-more-btn .me-2 {
+html[dir="rtl"] {
+
+    #saving_plans .explore-more-btn .me-2,
+    .visa_content .explore-more-btn .me-2 {
+        margin-left: .5rem !important;
+
+    }
+}
+
+html[dir="rtl"] {
+    .visa_content .text-lg-start {
+        text-align: right !important;
+    }
+}
+
+html[dir="rtl"] .announcements_sec .text-lg-start {
+    text-align: start !important;
+}
+
+
+html[dir="rtl"] .me-2 {
     margin-left: .5rem !important;
-
-}
 }
 
-html[dir="rtl"]  { .visa_content .text-lg-start {
-    text-align: right !important;
+html[dir="rtl"] .mob_img {
+    position: absolute;
+    bottom: 0;
+    transform: translate(90px, 10px) !important;
 }
+
+html[dir="rtl"]  .ps-lg-5 {
+    padding-left: 1rem !important;
+}
+
+html[dir="rtl"]  .me-3 {
+    margin-left: 1rem !important;
+}
+
+html[dir="rtl"] .swiper-button-next:after {
+    content: 'next';
+    transform: rotate(180deg);
+}
+
+html[dir="rtl"] .swiper-button-prev:after {
+    content: 'next';
+    transform: rotate(0deg);
+}
+
+html[dir="rtl"] .footer_sec  .list-unstyled {
+   
+    padding-right: 0;
 }
