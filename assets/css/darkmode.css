@@ -5,7 +5,6 @@
     --nav-color: #FFFFFF;
     --heading-color: #FFFFFF;
     --para-color: #FFFFFF;
-    --nav-color: #FFFFFF;
     --gradient-btn: linear-gradient(270deg, #26A9E2 0%, #005EAC 100%);
     --pale-blue: #EAF5FB;
     --navy-color: #000C24;
@@ -110,7 +109,7 @@
 
 /* view all btn cs */
 
-.view_all_btn {
+[data-bs-theme="dark"] .view_all_btn {
     background: transparent;
     border-radius: 50px;
     padding: 16px 49px;
@@ -161,6 +160,20 @@
 }
 
 
+[data-bs-theme="dark"] .proucts_services_sec {
+    background-color: var( --navy-color);
+}
+
+
+[data-bs-theme="dark"] .support_center {
+    background-color: var(--dark-blue);
+  }
+
+
+  
+  [data-bs-theme="dark"] .latest_news{
+    background-color: var(--navy-color);
+  }
 
 
 
