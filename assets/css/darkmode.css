@@ -149,7 +149,7 @@
     font-size: 14px;
 }
 
-[data-bs-theme="dark"] .login_btn  {
+[data-bs-theme="dark"] .login_btn {
     color: var(--navy-color) !important;
 }
 
@@ -161,22 +161,32 @@
 
 
 [data-bs-theme="dark"] .proucts_services_sec {
-    background-color: var( --navy-color);
+    background-color: var(--navy-color);
 }
 
 
 [data-bs-theme="dark"] .support_center {
     background-color: var(--dark-blue);
-  }
+}
 
 
-  
-  [data-bs-theme="dark"] .latest_news{
+
+[data-bs-theme="dark"] .latest_news {
     background-color: var(--navy-color);
+}
+
+
+
+[data-bs-theme="dark"] .downlaod_app {
+    background-color: var(--navy-color);
+
+}
+
+
+[data-bs-theme="dark"]  .signup_sec {
+    background-color: var(--pale-blue);
+   
   }
-
-
-
 
 
 /* ends */

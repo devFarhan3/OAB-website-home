@@ -6,6 +6,7 @@
 
 
 :root {
+  --dark-black:#000000;
   --custom-bg: #FFFFFF;
   --dark-blue: #015EAB;
   --light-blue: #26AAE1;
@@ -125,6 +126,10 @@
 
 
 
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -142,6 +147,8 @@ body {
   box-sizing: border-box;
   overflow-x: hidden !important;
 }
+
+
 
 a {
   color: var(--accent-color);
@@ -579,7 +586,7 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--contrast-color);
+  color: var(--white-color);
   line-height: 0;
 }
 
@@ -689,6 +696,7 @@ h6 {
   align-items: center;
   background: url(../img/hero-banner.png) top center no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 /* ends hero banner css */
@@ -790,7 +798,7 @@ input:checked+.slider .moon {
 .nav-pills .show>.nav-link {
   color: var(--navy-color);
   background-color: var(--white-color);
-  padding: 8px 24px;
+  padding: 8px 15px;
   border-radius: 41.704px;
   cursor: pointer;
 }
@@ -949,6 +957,16 @@ label.micon {
   align-items: start;
 } */
 
+.dropdown_list_items {
+  position: relative;
+}
+
+
+.toggle_btn {
+  position: absolute;
+  right: 100px;
+}
+
 
 .dropdown_list_items .navmenu {
   background: unset;
@@ -971,7 +989,7 @@ label.micon {
   list-style: none;
   padding-left: 0;
   padding: 2px 20px;
-  width: 25%;
+  width: 30%;
   border-right: 1px solid var(--white-color);
 
 }
@@ -1556,6 +1574,14 @@ button.slick-next.slick-arrow {
   background-color: var(--pale-blue);
 }
 
+
+.news_cirlce img {
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+  transform: translate(-40%, 5%);
+  overflow: hidden;
+}
 
 .round-cirlce {
   position: absolute;
@@ -2210,7 +2236,8 @@ button.slick-next.slick-arrow {
   }
 
   .feedback_cards:last-child {
-    flex: 0 0 70%;
+    flex: 0 0 85%;
+    margin-left: 1rem;
   }
 }
 
@@ -2462,16 +2489,16 @@ button.slick-next.slick-arrow {
   color: var(--navy-color);
 }
 
-.footer_sec ul li  {
+.footer_sec ul li {
 
 
   margin-bottom: 12px;
-  
+
 }
 
 
- .footer_sec h6{
-  
+.footer_sec h6 {
+
   font-family: var(--nav-font);
   font-style: normal;
   font-weight: 400;
@@ -2479,7 +2506,111 @@ button.slick-next.slick-arrow {
   line-height: 20px;
   margin-bottom: 35px;
   color: var(--navy-color);
-  }
+}
+
+
+.footer_list ul li {
+  margin-bottom: 0px;
+}
+
+
+.sign_inn {
+  background: var(--coprate-btn);
+  padding: 36px;
+  border-radius: 16px;
+}
+
+.downlaod_app {
+  background: var(--pale-blue);
+  /* padding: 35px; */
+
+}
+
+.downlaod_app_pb {
+  padding: 33px;
+  background: var(--gradient-personal-banking);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.signup_sec {
+  background-color: var(--white-color);
+  border-radius: 16px;
+  padding: 64px 90px;
+  overflow: hidden;
+}
+
+.navy_color {
+  color: var(--navy-color);
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  padding: 16px 24px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 34px;
+  margin-right: 8px;
+  /* space between input and button */
+  outline: none;
+  width: 368px;
+  font-family: var(--nav-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.input-wrapper button {
+  padding: 16px 24px;
+  border: 1px solid var(--dark-black);
+  background-color: var(--dark-black);
+  color: var(--white-color);
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-wrapper button:hover {
+  background-color: var(--dark-black);
+  border: 1px solid var(--dark-black);
+}
+
+.input-wrapper input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.text-dark{
+  color:var(--dark-black)
+}
+
+ .submenu:last-child{
+  border: 0;
+}
+
+.theme-switch .slider {
+  background: var(--pale-blue);
+  border: 1.35294px solid var(--gray-border);
+  border-radius: 162.353px;
+  padding: 4px 9px;
+  width: 50px;
+  display: flex;
+  height: auto;
+  cursor: pointer;
+}
+
+
+
+/* *{
+  outline: 1px salmon solid;
+} */
+
 /* endds */
 
 
@@ -2500,3 +2631,15 @@ button.slick-next.slick-arrow {
 }
 
 /* ends */
+
+/* farhan media query css  */
+
+
+@media (max-width: 640px) {
+
+.hamburger_icons{
+  display:none
+}
+
+
+}

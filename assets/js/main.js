@@ -346,5 +346,13 @@
   });
 
 
+  // mega menu cross btn js 
+
+  $(document).ready(function () {
+    $('#tmenu').click(function () {
+      $('#navmenu').toggle(); // This will hide/show the div
+    });
+  });
+
 
 })();
