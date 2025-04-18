@@ -183,10 +183,16 @@
 }
 
 
-[data-bs-theme="dark"]  .signup_sec {
+[data-bs-theme="dark"] .signup_sec {
     background-color: var(--pale-blue);
-   
-  }
 
+}
+
+
+[data-bs-theme="dark"] .card_sec {
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+}
 
 /* ends */
