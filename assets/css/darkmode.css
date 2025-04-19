@@ -213,9 +213,7 @@
     fill: var(--white-color);
 }
 
-[data-bs-theme="dark"] .swiper-wrapper {
-    direction: ltr !important;
-}
+
 
 
 

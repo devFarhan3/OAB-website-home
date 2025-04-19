@@ -242,6 +242,10 @@ html[dir="rtl"]  .header .logo img {
 }
 
 
+html[dir="rtl"] .swiper-wrapper {
+    direction: ltr !important;
+}
+
 html[dir="rtl"] #mobile_app_sec .mob_img {
    
     transform: translate(88px, 10px) !important;

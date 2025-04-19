@@ -1853,12 +1853,9 @@ button.slick-next.slick-arrow {
   right: 0;
   bottom: 0;
   padding: 1px;
-  /* This controls border thickness */
   border-radius: 16px;
   background: linear-gradient(180deg, #015EAB 0%, #26AAE1 100%);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   z-index: -1;
