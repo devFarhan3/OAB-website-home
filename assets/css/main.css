@@ -2600,9 +2600,9 @@ button.slick-next.slick-arrow {
   color: var(--dark-black)
 }
 
-.submenu:last-child {
+/* .submenu:last-child {
   border: 0;
-}
+} */
 
 .theme-switch .slider {
   background: var(--pale-blue);
