@@ -2862,6 +2862,12 @@ body {
  
 }
 
+.footer_list {
+  display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
 }
 
 
