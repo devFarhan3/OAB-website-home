@@ -251,6 +251,14 @@ html[dir="rtl"] #mobile_app_sec .mob_img {
     transform: translate(120px, 10px) !important;
 }
 
+html[dir="rtl"] .mobile-nav-active , html[dir="rtl"]  .mobile-nav-toggle {
+   
+ 
+    left: 15px;
+    right: auto;
+   
+}
+
 
 @media (max-width: 640px) {
     html[dir="rtl"] .search_icon {
