@@ -3,11 +3,11 @@ html[dir="rtl"] .header_btn {
     backdrop-filter: blur(2px);
     border-radius: 50px;
     padding: 16px 49px;
-    font-family: 'RM Neue';
+    /* font-family: 'RM Neue'; */
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 15px;
     color: var(--white-color);
     border: 1px solid var(--dark-blue);
     margin-left: 8px;
@@ -173,7 +173,7 @@ html[dir="rtl"] .footer_sec .list-unstyled {
 html[dir="rtl"] .input-wrapper input {
     
     margin-left: 8px;
-   margin-right: auto;
+   margin-right: 0;
 }
 
 html[dir="rtl"] .toggle_btn {
@@ -182,11 +182,63 @@ html[dir="rtl"] .toggle_btn {
     right: auto;
 }
 
-.card_sec {
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(25px);
+html[dir="rtl"]   .list-inline {
+    padding-right: 0;
+    list-style: none;
 }
+
+html[dir="rtl"] .news_cirlce img {
+  
+    transform: translate(40%, 5%);
+    overflow: hidden;
+}
+
+html[dir="rtl"]  .gradient_btn {
+   
+    padding: 12px 25px;
+   
+}
+html[dir="rtl"]   .progress_slider .slick-slide {
+    margin-left: 24px;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .hero h2 {
+   
+    letter-spacing: -0.01em;
+    font-size: clamp(44px, 5vw, 64px);
+    
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+    html[dir="rtl"] .navmenu a,
+    html[dir="rtl"] .navmenu a:focus {
+  
+      font-size: 13px;
+      padding: 6px;
+      line-height: 19px;
+      transition: 0.3s;
+    }
+
+    html[dir="rtl"] .hero h2 {
+        font-size: clamp(35px, 5vw, 55px);
+      }
+  }
+
+html[dir="rtl"] .svg-icon-list {
+    list-style: none;
+    padding-right: 0;
+    margin-bottom: 0px;
+}
+
+html[dir="rtl"]  .header .logo img {
+   
+    margin-left: 0;
+    margin-right: auto;
+}
+
 
 
 @media (max-width: 640px) {
