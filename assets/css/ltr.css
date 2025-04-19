@@ -225,6 +225,8 @@ html[dir="rtl"] .hero h2 {
     html[dir="rtl"] .hero h2 {
         font-size: clamp(35px, 5vw, 55px);
       }
+
+
   }
 
 html[dir="rtl"] .svg-icon-list {
@@ -239,6 +241,11 @@ html[dir="rtl"]  .header .logo img {
     margin-right: auto;
 }
 
+
+html[dir="rtl"] #mobile_app_sec .mob_img {
+   
+    transform: translate(88px, 10px) !important;
+}
 
 
 @media (max-width: 640px) {

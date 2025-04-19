@@ -200,4 +200,23 @@
     border: 1px solid var(--white-color) !important;
 }
 
+[data-bs-theme="dark"] .footer_sec {
+
+    background-color: var(--navy-color);
+}
+
+[data-bs-theme="dark"] .footer_sec h6, [data-bs-theme="dark"] .footer_sec p, [data-bs-theme="dark"] .footer_sec ul li a {
+    color: var(--white-color);
+}
+
+[data-bs-theme="dark"] .footer_sec svg path {
+    fill: var(--white-color);
+}
+
+[data-bs-theme="dark"] .swiper-wrapper {
+    direction: ltr !important;
+}
+
+
+
 /* ends */
