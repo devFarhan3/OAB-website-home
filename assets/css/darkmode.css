@@ -52,7 +52,7 @@
 
 /* blue gradient btn css */
 
-.gradient_btn {
+[data-bs-theme="dark"] .gradient_btn {
     background: var(--gradient-btn);
     padding: 12px 36px;
     border-radius: 56px;
@@ -69,7 +69,7 @@
 
 /* white border btn */
 
-.white_border_btn {
+[data-bs-theme="dark"] .white_border_btn {
     background: transparent;
     padding: 14px 36px;
     border: 1px solid var(--white-color);

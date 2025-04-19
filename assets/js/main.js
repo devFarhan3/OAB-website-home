@@ -200,8 +200,7 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 
-  // dark light mode js
-
+  // dark light mode js header 
 
   document.addEventListener('DOMContentLoaded', function () {
     const themeSwitch = document.getElementById('themeSwitch');
