@@ -258,10 +258,6 @@ html[dir="rtl"] .mobile-nav-toggle {
 
 }
 
-html[dir="rtl"] .feedback_cards {
-
-    margin-left: 1rem;
-}
 
 
 html[dir="rtl"] .saving_plans .dropdown-menus {
@@ -271,6 +267,13 @@ html[dir="rtl"] .saving_plans .dropdown-menus {
     background-repeat: no-repeat;
     background-position-x: 5%;
 
+}
+
+
+html[dir="rtl"] .mob_img {
+    position: absolute;
+    bottom: 0;
+    transform: translate(110px, 10px) !important;
 }
 
 
@@ -290,13 +293,25 @@ html[dir="rtl"] .we_offer .offer_cards:hover .content button {
     html[dir="rtl"] #mobile_app_sec .mob_img {
         transform: translate(14px, -374px) !important;
     }
+
+
 }
 
 
 @media (max-width: 640px) {
+
+    html[dir="rtl"] .feedback_cards {
+        margin-left: 1rem;
+    }
     html[dir="rtl"] .search_icon {
 
         left: 85px;
         right: auto;
+    }
+
+    html[dir="rtl"] .mob_img {
+        position: absolute;
+        bottom: 0;
+        transform: translate(0px, -420px) !important;
     }
 }
