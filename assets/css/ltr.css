@@ -171,9 +171,9 @@ html[dir="rtl"] .footer_sec .list-unstyled {
 }
 
 html[dir="rtl"] .input-wrapper input {
-    
+
     margin-left: 8px;
-   margin-right: 0;
+    margin-right: 0;
 }
 
 html[dir="rtl"] .toggle_btn {
@@ -182,32 +182,33 @@ html[dir="rtl"] .toggle_btn {
     right: auto;
 }
 
-html[dir="rtl"]   .list-inline {
+html[dir="rtl"] .list-inline {
     padding-right: 0;
     list-style: none;
 }
 
 html[dir="rtl"] .news_cirlce img {
-  
+
     transform: translate(40%, 5%);
     overflow: hidden;
 }
 
-html[dir="rtl"]  .gradient_btn {
-   
+html[dir="rtl"] .gradient_btn {
+
     padding: 12px 25px;
-   
+
 }
-html[dir="rtl"]   .progress_slider .slick-slide {
+
+html[dir="rtl"] .progress_slider .slick-slide {
     margin-left: 24px;
     margin-right: 0;
 }
 
 html[dir="rtl"] .hero h2 {
-   
+
     letter-spacing: -0.01em;
     font-size: clamp(44px, 5vw, 64px);
-    
+
 }
 
 
@@ -215,19 +216,19 @@ html[dir="rtl"] .hero h2 {
 
     html[dir="rtl"] .navmenu a,
     html[dir="rtl"] .navmenu a:focus {
-  
-      font-size: 13px;
-      padding: 6px;
-      line-height: 19px;
-      transition: 0.3s;
+
+        font-size: 13px;
+        padding: 6px;
+        line-height: 19px;
+        transition: 0.3s;
     }
 
     html[dir="rtl"] .hero h2 {
         font-size: clamp(35px, 5vw, 55px);
-      }
+    }
 
 
-  }
+}
 
 html[dir="rtl"] .svg-icon-list {
     list-style: none;
@@ -235,8 +236,8 @@ html[dir="rtl"] .svg-icon-list {
     margin-bottom: 0px;
 }
 
-html[dir="rtl"]  .header .logo img {
-   
+html[dir="rtl"] .header .logo img {
+
     margin-left: 0;
     margin-right: auto;
 }
@@ -246,23 +247,38 @@ html[dir="rtl"] .swiper-wrapper {
     direction: ltr !important;
 }
 
-html[dir="rtl"] #mobile_app_sec .mob_img {
-   
-    transform: translate(120px, 10px) !important;
-}
 
-html[dir="rtl"] .mobile-nav-active , html[dir="rtl"]  .mobile-nav-toggle {
-   
- 
+
+html[dir="rtl"] .mobile-nav-active,
+html[dir="rtl"] .mobile-nav-toggle {
+
+
     left: 15px;
     right: auto;
-   
+
+}
+
+html[dir="rtl"] .feedback_cards {
+
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 350px) {
+    html[dir="rtl"] #mobile_app_sec .mob_img {
+        transform: translate(14px, -374px) !important;
+    }
 }
 
 
 @media (max-width: 640px) {
     html[dir="rtl"] .search_icon {
-        
+
         left: 85px;
         right: auto;
     }

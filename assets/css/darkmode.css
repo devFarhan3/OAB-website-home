@@ -8,6 +8,7 @@
     --gradient-btn: linear-gradient(270deg, #26A9E2 0%, #005EAC 100%);
     --pale-blue: #EAF5FB;
     --navy-color: #000C24;
+    --gray-border: #7C949C;
 
 }
 
@@ -88,7 +89,7 @@
 #announcements_sec .view_all_btn {
     background: var(--white-color);
     border-radius: 50px;
-    padding: 16px 49px;
+    padding: 16px 30px;
     font-family: var(--nav-font);
     font-style: normal;
     font-weight: 400;
@@ -205,16 +206,35 @@
     background-color: var(--navy-color);
 }
 
-[data-bs-theme="dark"] .footer_sec h6, [data-bs-theme="dark"] .footer_sec p, [data-bs-theme="dark"] .footer_sec ul li a {
+[data-bs-theme="dark"] .footer_sec h6,
+[data-bs-theme="dark"] .footer_sec p,
+[data-bs-theme="dark"] .footer_sec ul li a {
     color: var(--white-color);
 }
 
-[data-bs-theme="dark"] .footer_sec svg path {
+[data-bs-theme="dark"] .footer_sec svg path,
+[data-bs-theme="dark"] .footr_btm svg path {
     fill: var(--white-color);
 }
 
+[data-bs-theme="dark"] .footer_sec h6 {
+    color: var(--gray-border);
+}
+
+
+/* [data-bs-theme="dark"] .mobile_app_sec {
+    padding: 100px 96px;
+    background: var(--coprate-btn);
+} */
 
 
 
+@media (max-width: 375px) {
+    [data-bs-theme="dark"] .gradient_btn {
+        padding: 12px 20px !important;
+        font-size: 13px !important;
+        line-height: 19px !important;
+    }
+}
 
 /* ends */
