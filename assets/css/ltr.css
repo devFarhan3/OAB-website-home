@@ -264,6 +264,23 @@ html[dir="rtl"] .feedback_cards {
 }
 
 
+html[dir="rtl"] .saving_plans .dropdown-menus {
+    font-family: var(--nav-font);
+
+    background-image: url(../img/arrow-left.png);
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+
+}
+
+
+html[dir="rtl"] .we_offer .offer_cards:hover .content p,
+html[dir="rtl"] .we_offer .offer_cards:hover .content button {
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
+    text-align: start !important;
+}
 
 
 

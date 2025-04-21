@@ -90,7 +90,7 @@
 
 .gradient_btn {
   background: var(--gradient-btn);
-  padding: 14px 36px;
+  padding: 14px 35px;
   border-radius: 56px;
   font-family: var(--nav-font);
   font-style: normal;
@@ -3216,4 +3216,9 @@ body {
 
     background-position: -29px 19px;
   }
+
+  .last_card .profile-box {
+    padding: 8px !important;
+   
+}
 }
