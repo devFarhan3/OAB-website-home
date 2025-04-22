@@ -259,12 +259,24 @@
       item.addEventListener('click', function (e) {
         e.preventDefault();
         const lang = this.getAttribute('data-lang');
+        const language = this.getAttribute('data-language');
         setLanguage(lang);
         localStorage.setItem('lang', lang);
 
         // Update dropdown button text
         const langText = this.textContent.trim();
-        languageDropdown.innerHTML = `<i class="bi bi-chevron-right"></i> ${langText.split(' ')[0]}`;
+        if(lang == 'ar')
+        {
+          var languagetextnew = 'en';
+          var languagetextvalue = 'العربية';
+        }else
+        {
+          var languagetextnew = 'ar';
+          var languagetextvalue = 'English';
+        }
+        languageDropdown.setAttribute('data-lang', languagetextnew);
+        languageDropdown.setAttribute('data-language', languagetextvalue);
+        languageDropdown.innerHTML = `<i class="bi bi-chevron-right"></i> ${language}`;
       });
     });
 
@@ -299,12 +311,23 @@
 
 
   $("#tmenu").click(function () {
+    $('[class*="_menu"]').removeClass('d-none');
     if ($(this).is(":checked")) {
       $(".hidden-menu").slideToggle(300);
     } else {
       $(".hidden-menu").slideToggle(200);
     }
   });
+
+  $('.click_nav').click(function () {
+    var type = $(this).attr('data-type');
+    $('[class*="_menu"]').addClass('d-none');
+    $('.'+type+'_menu').removeClass('d-none');
+    $(".hidden-menu").slideToggle(300);
+    $('.'+type+'_menu').find('a').hover();
+    console.log(type);
+    
+  })
 
 
 
@@ -352,6 +375,29 @@
       $('#navmenu').toggle(); // This will hide/show the div
     });
   });
+
+
+  // mobile scroll caeds js
+
+  const div1 = document.getElementById('div1');
+const div2 = document.getElementById('div2');
+
+let isScrolling = false;
+
+function syncScroll(source, target) {
+  if (!isScrolling) {
+    isScrolling = true;
+    requestAnimationFrame(() => {
+      target.scrollLeft = source.scrollLeft;
+      isScrolling = false;
+    });
+  }
+}
+
+div1.addEventListener('scroll', () => syncScroll(div1, div2));
+div2.addEventListener('scroll', () => syncScroll(div2, div1));
+
+
 
 
 })();

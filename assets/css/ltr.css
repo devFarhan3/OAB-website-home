@@ -300,6 +300,10 @@ html[dir="rtl"] .we_offer .offer_cards:hover .content button {
 
 @media (max-width: 640px) {
 
+    html[dir="rtl"] .toggle_btn .toggle-wrapper {
+        right: unset;
+    }
+
     html[dir="rtl"] .feedback_cards {
         margin-left: 1rem;
     }

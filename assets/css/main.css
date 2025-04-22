@@ -57,7 +57,7 @@
   background: var(--white-color);
   backdrop-filter: blur(2px);
   border-radius: 50px;
-  padding: 16px 49px;
+  padding: 15.5px 49px;
   font-family: var(--nav-font);
   font-style: normal;
   font-weight: 400;
@@ -240,7 +240,7 @@ h6 {
 
 @media (max-width: 1200px) {
   .header .logo {
-    order: 1;
+    order: 0;
   }
 
   .header .btn-getstarted {
@@ -250,7 +250,7 @@ h6 {
   }
 
   .header .navmenu {
-    order: 3;
+    order: 0;
   }
 }
 
@@ -310,6 +310,7 @@ h6 {
     padding: 8px 20px;
     line-height: 19px;
     transition: 0.3s;
+    cursor: pointer;
   }
 
   .navmenu a i,
@@ -431,6 +432,7 @@ h6 {
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+    cursor: pointer;
   }
 
   .navmenu a i,
@@ -711,7 +713,7 @@ h6 {
 /* hero banner sec css */
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
   padding: 164px 0px 120px 0px;
   display: flex;
@@ -819,6 +821,9 @@ input:checked+.slider .moon {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
 
 }
 
@@ -1349,7 +1354,7 @@ button.slick-next.slick-arrow {
 }
 
 .layer_cirlce {
-  background: url(../img/gs1.webp) center;
+  /* background: url(../img/gs_circle.png) center; */
   top: 0;
   left: 0;
   width: 100%;
@@ -2420,15 +2425,20 @@ button.slick-next.slick-arrow {
 
 
 /* progress sldier css */
-
-.progress-slider {
+.latest_progress_slider {
   display: flex;
   overflow: hidden;
   background-image: url(../img/ceo.webp);
   background-size: cover;
   border-radius: 16px;
   background-repeat: no-repeat;
-  background-position-x: 130px;
+  width: 100%;
+  background-position-x: 60px;
+}
+
+.progress-slider {
+  width: 50%;
+  /* background-position-x: 130px; */
 }
 
 .progress-slider-left {
@@ -2437,14 +2447,16 @@ button.slick-next.slick-arrow {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: var(--pale-blue);
+  background: rgba(234, 245, 251, 0.9);
+
+  /* background-color: var(--pale-blue); */
   /* background: #EAF5FB; */
   background-blend-mode: hard-light;
-  background: linear-gradient(0deg, rgba(234, 245, 251, 0.9), rgba(234, 245, 251, 1)), url(../img/layer-bg.webp);
+  /* background: linear-gradient(0deg, rgba(234, 245, 251, 0.9), rgba(234, 245, 251, 1)), url(../img/layer-bg.webp); */
   background-size: cover;
   background-position: center;
   border-radius: 16px 0px 0px 0px;
-  backdrop-filter: blur(3px);
+  /* ? backdrop-filter: blur(3px); */
 }
 
 /* .progress-slider {
@@ -2599,7 +2611,7 @@ button.slick-next.slick-arrow {
     height: 400px;
   }
 
-  .progress-slider {
+  /* .progress-slider {
     display: flex;
     overflow: hidden;
 
@@ -2607,7 +2619,7 @@ button.slick-next.slick-arrow {
 
     background-position: -35px -44px;
 
-  }
+  } */
 
   .section-one .pb_48 {
     padding-bottom: 0px;
@@ -2659,7 +2671,7 @@ button.slick-next.slick-arrow {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 16px;
   color: var(--navy-color);
 }
 
@@ -2808,6 +2820,104 @@ body {
   margin-bottom: 36px;
 }
 
+.responsive-cards {
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* white-space: nowrap; */
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+
+}
+
+.responsive-cards::-webkit-scrollbar {
+  display: none;
+}
+
+/* toggle mobile css */
+/* Dropdown container */
+.mobilemenu .menu-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Hide checkboxes */
+.mobilemenu .menu-toggle {
+  display: none;
+}
+
+/* Style the label as the dropdown button */
+.mobilemenu .menu-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  color:var(--white-color);
+  cursor: pointer;
+ border-bottom: 1px solid var(--white-color);
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.mobilemenu .menu-btn:hover {
+  background:var(--light-blue);
+}
+
+/* Chevron icon */
+.mobilemenu .menu-btn::after {
+  content: "\f282";
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Rotate chevron when menu is open */
+.mobilemenu .menu-toggle:checked + .menu-btn::after {
+  transform: rotate(180deg);
+}
+
+/* Dropdown content */
+.mobilemenu .menu-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--dark-blue);
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.2); */
+  /* border-radius: 0 0 4px 4px; */
+  color:var(--white-color);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  z-index: 1;
+}
+
+/* Show dropdown when checkbox is checked */
+.mobilemenu .menu-toggle:checked ~ .menu-items {
+  max-height: 500px; /* Adjust based on content */
+  /* margin-bottom: 1.5rem; Creates space below */
+}
+
+/* Menu items */
+.mobilemenu .menu-items a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--white-color);
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.mobilemenu .menu-items a:hover {
+  background: #f0f0f0;
+}
+
 
 /* farhan css ends */
 
@@ -2838,6 +2948,7 @@ body {
     padding: 6px;
     line-height: 19px;
     transition: 0.3s;
+    cursor: pointer;
   }
 
   .hero h2 {
@@ -2845,10 +2956,76 @@ body {
   }
 }
 
+.hamburger_icons {
+  display: none;
+}
+
+
+/* tab 1080 for mega menu dropdown */
+@media only screen and (max-width: 1080px) and (min-width: 768px) {
+  .header .logo {
+    order: 0;
+  }
+
+  .hamburger_icons {
+    display: block;
+  }
+
+  .hidden-menu {
+    padding: 19px 0px;
+  }
+
+  .toggle_btn .toggle-wrapper {
+
+    right: 10px;
+}
+
+.main-menu, .submenu {
+  
+  width: 33%;
+  
+}
+}
+
+/* ends */
+
 
 @media (max-width: 640px) {
-  .progress-slider{
-background-image: unset;
+  .dropdown_list_items {
+    display: none;
+  }
+
+  .micon .tmenu {
+    top: 20px;
+}
+
+  .main-menu,
+  .submenu {
+    list-style: none;
+    width: 100%;
+    border-right: 0;
+    padding: 10px;
+  }
+
+  .toggle_btn .toggle-wrapper {
+  
+    right: 15px;
+}
+  .hidden-menu {
+    height: 50% ;
+    width: 100%;
+    padding: 24px 0px;
+
+  }
+
+  .elite_gradient_btn {
+
+    justify-content: center;
+  }
+
+
+  .progress-slider {
+    background-image: unset;
   }
 
   .progress-slider-right {
@@ -2859,7 +3036,7 @@ background-image: unset;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+  }
 
   .saving_plans {
     /* padding: 80px 24px; */
@@ -2874,8 +3051,9 @@ background-image: unset;
   }
 
   .hamburger_icons {
-    display: none
+    display: block
   }
+
 
   .signup_sec {
 
@@ -2903,9 +3081,9 @@ background-image: unset;
     padding: 24px 5px;
   }
 
-  .footer_sec {
+  /* .footer_sec {
     padding: 58px 5px 36px;
-  }
+  } */
 
   .sign_inn,
   .downlaod_app_pb {
@@ -2974,12 +3152,13 @@ background-image: unset;
   }
 
   .search_icon {
-    color: var(--white-color);
+    /* color: var(--white-color);
     position: absolute;
     font-size: 32px;
     top: -3px;
     right: 85px;
-    z-index: 9999;
+    z-index: 9999; */
+    display: none;
   }
 
   .mobile_cards_slider {
@@ -2993,7 +3172,7 @@ background-image: unset;
   }
 
   .pb_gradient_btn a {
-    padding: 30px 20px;
+    padding: 30px 50px;
     font-size: 28px;
     line-height: 34px;
   }
@@ -3119,11 +3298,22 @@ background-image: unset;
   .layer_gs_circle {
     display: none;
   }
-  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-   
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {
+
     padding: 10px 20px;
-   
-}
+
+  }
+
+  .progress-slider {
+    width: 53%;
+    /* background-position-x: 130px; */
+  }
+
+  .we_offer {
+    padding-bottom: 0px;
+  }
 
 }
 
@@ -3217,10 +3407,34 @@ background-image: unset;
     background-position: -29px 19px !important;
   }
 
+  .footext_ {
+    margin-bottom: 16px;
+  }
+
+  .footer_list {
+
+    justify-content: center;
+  }
+
+  .progress_slider .slick-slide {
+    margin-right: 24px;
+    width: 300px;
+  }
+
 }
 
 
 @media (max-width: 350px) {
+
+  .footext_ {
+    margin-bottom: 16px;
+  }
+
+  .footer_list {
+
+    justify-content: center;
+  }
+
   .mob_img {
     transform: translate(0%, -55%) !important;
   }
@@ -3232,6 +3446,6 @@ background-image: unset;
 
   .last_card .profile-box {
     padding: 8px !important;
-   
-}
+
+  }
 }
